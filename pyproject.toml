@@ -1,0 +1,14 @@
+[project]
+name = "autoillustrator"
+version = "0.1.0"
+description = "Small tool to quickly create gaming cards images"
+authors = [{ name = "Carlo Antonio Venditti", email = "c.a.venditti@pm.me"}]
+readme = "README.md"
+
+requires-python = ">= 3.11"
+
+dependencies = [
+  "pandas==2.2.1",
+  "pillow==10.2.0",
+  "openpyxl==3.1.2",
+]
