@@ -39,7 +39,8 @@ def add_image_replacement(replacements, image_path):
     template_image_path = "./PICTURE%20PATH%20IN%20YOUR%20SVG%20FILE.webp"
 
     image_path = os.path.join(PICTURES_DIR, quote(image_path))
-    print(image_path, os.path.exists(image_path))
+    if not os.path.exists(image_path):
+        print(f"Missing image: {image_path}")
     replacements[template_image_path] = os.path.abspath(image_path)
 
 
